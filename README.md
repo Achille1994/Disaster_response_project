@@ -36,13 +36,13 @@ In a Python script, train_classifier.py, write a machine learning pipeline that:
 Below are additional details about each component :
 
 Project Workspace - ETL :
-The first part of this data pipeline is the Extract, Transform, and Load process. Here, we will read the dataset, clean the data, and then store it in a SQLite database. For this part We choose to clean data with pandas in order to load the data into an SQLite database by using pandas dataframe .to_sql() method, which you can use with an SQLAlchemy engine.
+- The first part of this data pipeline is the Extract, Transform, and Load process. Here, we will read the dataset, clean the data, and then store it in a SQLite database. For this part We choose to clean data with pandas in order to load the data into an SQLite database by using pandas dataframe .to_sql() method, which you can use with an SQLAlchemy engine.
 
 Project Workspace - ML Pipeline :
-For the machine learning portion, we will split the data into a training set and a test set. Then, we will create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that uses the message column to predict classifications for 36 categories (multi-output classification). Finally, we will export our model to a pickle file. After completing the notebook, we include the final machine learning code in train_classifier.py.
+- For the machine learning portion, we will split the data into a training set and a test set. Then, we will create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that uses the message column to predict classifications for 36 categories (multi-output classification). Finally, we will export our model to a pickle file. After completing the notebook, we include the final machine learning code in train_classifier.py.
 
 Data Pipelines - python Scripts :
-After we are complete our notebooks for the ETL and machine learning pipeline, we transfer all our work into Python scripts, process_data.py and train_classifier.py.
+- After we are complete our notebooks for the ETL and machine learning pipeline, we transfer all our work into Python scripts, process_data.py and train_classifier.py.
 
 Flask App
 In the last step, we'll display our results in a Flask web app
