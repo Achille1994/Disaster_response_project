@@ -50,6 +50,4 @@ In the last step, we'll display our results in a Flask web app
 ## Repository layout
 The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project :
 
-
-u
-
+![Screenshot 2022-10-26 at 15 58 50](https://user-images.githubusercontent.com/74813723/198050332-a25d5f43-1209-4df3-b7bc-150e1bcb8426.png)
