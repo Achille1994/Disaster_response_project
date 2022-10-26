@@ -34,8 +34,8 @@ In a Python script, train_classifier.py, write a machine learning pipeline that:
 │   └── messages.csv
 │
 ├── ML_pipeline_prep
-│   ├── best_model.sav
-│   ├── DisasterResponse.db
+│   ├── best_model # save base model
+│   ├── DisasterResponse.db # save cla
 │   ├── ML Pipeline Preparation.ipynb
 │   └── model_est50_vocabnone_size33_rn42_idftrue_depth1.joblib
 
@@ -57,48 +57,29 @@ In the last step, we'll display our results in a Flask web app
 ## Repository layout
 The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project:
 
-- Web_app
+── Web_app
+│ 
 ├── app  
 │   │   
 │   └── templates
-│   │     ├── go.html
-│   │     └── master.html   
-│   └── routes.py
+│   │     ├── go.html.    # classification result page of web app
+│   │     └── master.html # main page of web app
+│   └── routes.           # Flask file that runs app
+│
 ├── data
-│   ├── disaster_categories.csv
-│   ├── disaster_messages.csv
-│   ├── DisasterResponse.db
+│   ├── disaster_categories.csv # data to process 
+│   ├── disaster_messages.csv   # data to process 
+│   ├── DisasterResponse.db     # database to save clean data to
 │   └──process_data.py
 │
 ├── models
-│   ├── DisasterResponse_est50_vocabnone_size33_rn42.db
-│   ├── DisasterResponse_est50_vocabnone_size33_rn42_idftrue_depth1.db
-│   ├── model_est50_vocabnone_size33_rn42_idftrue_depth1.joblib
-│   ├── model_est50_vocabnone_size33_rn42.joblib
+│   ├──  classifier.pkl   # saved model 
 │   └── train_classifier.py
 │
 ├── LICENSE
 ├── README.md
 ├── requirement.txt
-│
-└── Disaster_response_app
+├── Proficle
 
-  - app
-|   - template
-|   |- master.html  # main page of web app
-|   |- go.html  # classification result page of web app
-    |- run.py  # Flask file that runs app
-
-- data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- DatabaseResponse.db   # database to save clean data to
-
-- models
-|- train_classifier.py
-|- classifier.pkl  # saved model 
-
-- README.md
 
 
