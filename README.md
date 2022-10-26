@@ -3,6 +3,8 @@
 ## Project Overview
 In this project, we'll analyze disaster data from Appen (formally Figure 8) to build a model for an API that classifies disaster messages. In the Project, you'll find a data set containing real messages that were sent during disaster events. We will be creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency. This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. Below are a few screenshots of the web app.
 
+
+
 ## Project Components
 We'll need to complete this three components for this project.
 
@@ -27,18 +29,6 @@ In a Python script, train_classifier.py, write a machine learning pipeline that:
 3. Flask Web App & Deployed Heroku app online
 - build web app with boostrap library for front, flask for backend and Deployed Heroku app online
 
-
-├── ETL_pipeline_prep
-│   ├── categories.csv
-│   ├── ETL Pipeline Preparation.ipynb
-│   └── messages.csv
-│
-├── ML_pipeline_prep
-│   ├── best_model # save base model
-│   ├── DisasterResponse.db # save cla
-│   ├── ML Pipeline Preparation.ipynb
-│   └── model_est50_vocabnone_size33_rn42_idftrue_depth1.joblib
-
 ## Project Details
 Below are additional details about each component :
 
@@ -55,31 +45,8 @@ Flask App
 In the last step, we'll display our results in a Flask web app
 
 ## Repository layout
-The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project:
+The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project :
 
-── Web_app
-│ 
-├── app  
-│   │   
-│   └── templates
-│   │     ├── go.html.    # classification result page of web app
-│   │     └── master.html # main page of web app
-│   └── routes.           # Flask file that runs app
-│
-├── data
-│   ├── disaster_categories.csv # data to process 
-│   ├── disaster_messages.csv   # data to process 
-│   ├── DisasterResponse.db     # database to save clean data to
-│   └──process_data.py
-│
-├── models
-│   ├──  classifier.pkl   # saved model 
-│   └── train_classifier.py
-│
-├── LICENSE
-├── README.md
-├── requirement.txt
-├── Proficle
 
 
 
