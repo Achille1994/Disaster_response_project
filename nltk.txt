@@ -1,7 +1,0 @@
-wordnet
-pros_cons
-reuters
-stopwords
-punkt
-words
-omw-1.4
