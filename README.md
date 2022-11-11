@@ -50,4 +50,48 @@ In the last step, we'll display our results in a Flask web app
 ## Repository layout
 The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project :
 
-![Screenshot 2022-10-26 at 15 58 50](https://user-images.githubusercontent.com/74813723/198050332-a25d5f43-1209-4df3-b7bc-150e1bcb8426.png)
+- app
+| - template
+| |- master.html  # main page of web app
+| |- go.html  # classification result page of web app
+|- run.py  # Flask file that runs app
+
+- data
+|- disaster_categories.csv  # data to process 
+|- disaster_messages.csv  # data to process
+|- process_data.py
+|- Databaseresponse.db   # database to save clean data to
+
+- models
+|- train_classifier.py
+|- classifier.pkl  # saved model 
+
+- README.md
+
+## Project layout for deployment on heroku : 
+To deploy the model with heroku, we modularize the code into packages : Here's the file structure of the project layout for deployment :
+
+- Webapp
+| - flaskapp
+|    - template
+|      |- master.html  
+|      |- go.html  
+|    - __init__.py  
+|    - routes.py  # Flask file backend
+|
+| - data
+|   |- Databaseresponse.db   # save data clean
+|
+| - models
+|  |- classifier.pkl  # saved model 
+|
+| - files
+|  |- procces_tokenize.py  # essential file to tokens
+|
+- flaskapp.py # run web app
+- nltk.txt
+- Procfile
+- nltk.txt
+- requirements.txt 
+- runtime.txt
+
