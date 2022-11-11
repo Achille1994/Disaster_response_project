@@ -52,25 +52,6 @@ The coding for this project can be completed using the Project Workspace IDE pro
 
 <img width="464" alt="Screenshot 2022-11-11 at 01 41 11" src="https://user-images.githubusercontent.com/74813723/201238243-dc62958f-a14a-4ec4-88e3-062e9ff95ef3.png">
 
-
-- app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
-
-- data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- Databaseresponse.db   # database to save clean data to
-
-- models
-|- train_classifier.py
-|- classifier.pkl  # saved model 
-
-- README.md
-
 ## Project layout for deployment on heroku : 
 To deploy the model with heroku, we modularize the code into packages : Here's the file structure of the project layout for deployment :
 
