@@ -50,6 +50,9 @@ In the last step, we'll display our results in a Flask web app
 ## Repository layout
 The coding for this project can be completed using the Project Workspace IDE provided or Vscode. Here's the file structure of the project :
 
+<img width="464" alt="Screenshot 2022-11-11 at 01 41 11" src="https://user-images.githubusercontent.com/74813723/201238243-dc62958f-a14a-4ec4-88e3-062e9ff95ef3.png">
+
+
 - app
 | - template
 | |- master.html  # main page of web app
@@ -71,27 +74,5 @@ The coding for this project can be completed using the Project Workspace IDE pro
 ## Project layout for deployment on heroku : 
 To deploy the model with heroku, we modularize the code into packages : Here's the file structure of the project layout for deployment :
 
-- Webapp
-| - flaskapp
-|    - template
-|      |- master.html  
-|      |- go.html  
-|    - __init__.py  
-|    - routes.py  # Flask file backend
-|
-| - data
-|   |- Databaseresponse.db   # save data clean
-|
-| - models
-|  |- classifier.pkl  # saved model 
-|
-| - files
-|  |- procces_tokenize.py  # essential file to tokens
-|
-- flaskapp.py # run web app
-- nltk.txt
-- Procfile
-- nltk.txt
-- requirements.txt 
-- runtime.txt
+<img width="453" alt="Screenshot 2022-11-11 at 02 03 37" src="https://user-images.githubusercontent.com/74813723/201238276-bb41608c-4638-4897-98ac-fe19b5ea5686.png">
 
